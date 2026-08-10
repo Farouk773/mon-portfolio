@@ -117,14 +117,21 @@ const TRANSLATIONS = {
       github: "Dépôts GitHub",
       address: "Adresse & Localisation",
       nameLabel: "Votre Nom *",
+      namePlaceholder: "Ex: Thomas Martin",
       emailLabel: "Adresse Email *",
+      emailPlaceholder: "exemple@domaine.com",
       subjectLabel: "Sujet",
+      subjectPlaceholder: "Proposition de projet / Stage",
       messageLabel: "Votre Message *",
+      messagePlaceholder: "Bonjour Farouk, je souhaite vous contacter concernant...",
       submit: "Envoyer le message",
       sending: "Envoi en cours...",
       successTitle: "Message envoyé !",
       successSub: "Merci de votre message. Farouk vous répondra rapidement.",
       anotherMessage: "Envoyer un autre message"
+    },
+    footer: {
+      copyright: "© 2026 Farouk BOURAOUI. Tous droits réservés."
     },
     cvModal: {
       title: "Curriculum Vitae — Farouk BOURAOUI",
@@ -242,14 +249,21 @@ const TRANSLATIONS = {
       github: "GitHub Repositories",
       address: "Address & Location",
       nameLabel: "Your Name *",
+      namePlaceholder: "e.g. Alex Morgan",
       emailLabel: "Email Address *",
+      emailPlaceholder: "example@domain.com",
       subjectLabel: "Subject",
+      subjectPlaceholder: "Project proposal / Opportunity",
       messageLabel: "Your Message *",
+      messagePlaceholder: "Hi Farouk, I would like to discuss...",
       submit: "Send Message",
       sending: "Sending...",
       successTitle: "Message Received!",
       successSub: "Thank you for reaching out. Farouk will reply back shortly.",
       anotherMessage: "Send Another Message"
+    },
+    footer: {
+      copyright: "© 2026 Farouk BOURAOUI. All rights reserved."
     },
     cvModal: {
       title: "Curriculum Vitae — Farouk BOURAOUI",
@@ -1661,7 +1675,7 @@ function Contact() {
   }, t.contact.nameLabel), /*#__PURE__*/React.createElement("input", {
     type: "text",
     required: true,
-    placeholder: "John Doe",
+    placeholder: t.contact.namePlaceholder,
     value: formData.name,
     onChange: e => setFormData({
       ...formData,
@@ -1673,7 +1687,7 @@ function Contact() {
   }, t.contact.emailLabel), /*#__PURE__*/React.createElement("input", {
     type: "email",
     required: true,
-    placeholder: "john@example.com",
+    placeholder: t.contact.emailPlaceholder,
     value: formData.email,
     onChange: e => setFormData({
       ...formData,
@@ -1684,7 +1698,7 @@ function Contact() {
     className: "text-xs font-semibold text-slate-300 block mb-1"
   }, t.contact.subjectLabel), /*#__PURE__*/React.createElement("input", {
     type: "text",
-    placeholder: "Freelance / Opportunity",
+    placeholder: t.contact.subjectPlaceholder,
     value: formData.subject,
     onChange: e => setFormData({
       ...formData,
@@ -1696,7 +1710,7 @@ function Contact() {
   }, t.contact.messageLabel), /*#__PURE__*/React.createElement("textarea", {
     required: true,
     rows: "4",
-    placeholder: "Hi Farouk...",
+    placeholder: t.contact.messagePlaceholder,
     value: formData.message,
     onChange: e => setFormData({
       ...formData,
@@ -1821,7 +1835,7 @@ function Footer() {
   }, t.nav.education), /*#__PURE__*/React.createElement("a", {
     href: "#contact",
     className: "hover:text-cyan-400"
-  }, t.nav.contact)), /*#__PURE__*/React.createElement("p", null, "\xA9 2026 Farouk Bouraoui. Built with care and clean code.")));
+  }, t.nav.contact)), /*#__PURE__*/React.createElement("p", null, t.footer.copyright)));
 }
 
 // -------------------------------------------------------------

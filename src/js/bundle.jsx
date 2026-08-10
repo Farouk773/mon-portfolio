@@ -97,14 +97,21 @@ const TRANSLATIONS = {
       github: "Dépôts GitHub",
       address: "Adresse & Localisation",
       nameLabel: "Votre Nom *",
+      namePlaceholder: "Ex: Thomas Martin",
       emailLabel: "Adresse Email *",
+      emailPlaceholder: "exemple@domaine.com",
       subjectLabel: "Sujet",
+      subjectPlaceholder: "Proposition de projet / Stage",
       messageLabel: "Votre Message *",
+      messagePlaceholder: "Bonjour Farouk, je souhaite vous contacter concernant...",
       submit: "Envoyer le message",
       sending: "Envoi en cours...",
       successTitle: "Message envoyé !",
       successSub: "Merci de votre message. Farouk vous répondra rapidement.",
       anotherMessage: "Envoyer un autre message"
+    },
+    footer: {
+      copyright: "© 2026 Farouk BOURAOUI. Tous droits réservés."
     },
     cvModal: {
       title: "Curriculum Vitae — Farouk BOURAOUI",
@@ -207,14 +214,21 @@ const TRANSLATIONS = {
       github: "GitHub Repositories",
       address: "Address & Location",
       nameLabel: "Your Name *",
+      namePlaceholder: "e.g. Alex Morgan",
       emailLabel: "Email Address *",
+      emailPlaceholder: "example@domain.com",
       subjectLabel: "Subject",
+      subjectPlaceholder: "Project proposal / Opportunity",
       messageLabel: "Your Message *",
+      messagePlaceholder: "Hi Farouk, I would like to discuss...",
       submit: "Send Message",
       sending: "Sending...",
       successTitle: "Message Received!",
       successSub: "Thank you for reaching out. Farouk will reply back shortly.",
       anotherMessage: "Send Another Message"
+    },
+    footer: {
+      copyright: "© 2026 Farouk BOURAOUI. All rights reserved."
     },
     cvModal: {
       title: "Curriculum Vitae — Farouk BOURAOUI",
@@ -1377,20 +1391,20 @@ function Contact() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-xs font-semibold text-slate-300 block mb-1">{t.contact.nameLabel}</label>
-                    <input type="text" required placeholder="John Doe" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500" />
+                    <input type="text" required placeholder={t.contact.namePlaceholder} value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500" />
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-slate-300 block mb-1">{t.contact.emailLabel}</label>
-                    <input type="email" required placeholder="john@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500" />
+                    <input type="email" required placeholder={t.contact.emailPlaceholder} value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500" />
                   </div>
                 </div>
                 <div>
                   <label className="text-xs font-semibold text-slate-300 block mb-1">{t.contact.subjectLabel}</label>
-                  <input type="text" placeholder="Freelance / Opportunity" value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500" />
+                  <input type="text" placeholder={t.contact.subjectPlaceholder} value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500" />
                 </div>
                 <div>
                   <label className="text-xs font-semibold text-slate-300 block mb-1">{t.contact.messageLabel}</label>
-                  <textarea required rows="4" placeholder="Hi Farouk..." value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500 resize-none"></textarea>
+                  <textarea required rows="4" placeholder={t.contact.messagePlaceholder} value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-cyan-500 resize-none"></textarea>
                 </div>
                 <button type="submit" disabled={loading} className="w-full btn-primary py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
                   <Icon name="send" className="w-4 h-4" />
@@ -1479,7 +1493,7 @@ function Footer() {
           <a href="#education" className="hover:text-cyan-400">{t.nav.education}</a>
           <a href="#contact" className="hover:text-cyan-400">{t.nav.contact}</a>
         </div>
-        <p>© 2026 Farouk Bouraoui. Built with care and clean code.</p>
+        <p>{t.footer.copyright}</p>
       </div>
     </footer>
   );
