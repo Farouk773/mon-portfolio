@@ -33,6 +33,11 @@ const server = http.createServer((req, res) => {
     const publicPath = path.join(ROOT_DIR, 'public', reqUrl);
     if (fs.existsSync(publicPath)) {
       filePath = publicPath;
+    } else {
+      const srcCssPath = path.join(ROOT_DIR, 'src', 'css', reqUrl);
+      if (fs.existsSync(srcCssPath)) {
+        filePath = srcCssPath;
+      }
     }
   }
 
