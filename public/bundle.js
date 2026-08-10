@@ -282,7 +282,7 @@ const PROFILE_DATA = {
   status: "Available for Internships & Freelance Opportunities",
   email: "faroukbouraoui9@gmail.com",
   linkedin: "https://www.linkedin.com/in/farouk-bouraoui-a4a24a2b9/",
-  github: "https://github.com/faroukbouraoui",
+  github: "https://github.com/Farouk773",
   cyTechStatus: "Starting CY Tech in 2026 (1st Year Engineering Cycle)"
 };
 const FEATURED_PROJECTS = [{
@@ -368,7 +368,7 @@ const FEATURED_PROJECTS = [{
   technologies: ["React", "Spring Boot", "REST API", "HTML", "CSS", "JavaScript", "UI/UX"],
   primaryImage: "/assets/olp-screen-1.jpg",
   secondaryImage: "/assets/olp-screen-2.jpg",
-  github: "https://github.com/faroukbouraoui",
+  github: "https://github.com/Farouk773",
   caseStudy: {
     type: "Full-Stack & UI/UX Project",
     overview: "An end-to-end university management & e-learning web platform covering student registration, course catalogs, enrollment workflows, and course update modals.",
@@ -442,7 +442,7 @@ const FEATURED_PROJECTS = [{
   technologies: ["Java", "Spring Boot", "React", "PostgreSQL", "JWT", "Tailwind CSS"],
   primaryImage: "/assets/hackjourney-1.png",
   secondaryImage: "/assets/hackjourney-2.png",
-  github: "https://github.com/faroukbouraoui",
+  github: "https://github.com/Farouk773",
   caseStudy: {
     type: "Academic Team Project (3 Members)",
     overview: "A multi-role web platform built to orchestrate hackathons: participant registration, team formation, mentor advice requests, sponsor challenge creation, and jury project scoring.",
@@ -1626,7 +1626,7 @@ function Contact() {
     className: "text-[11px] text-slate-400 block"
   }, t.contact.github), /*#__PURE__*/React.createElement("span", {
     className: "text-sm font-bold text-white"
-  }, "github.com/faroukbouraoui"))), /*#__PURE__*/React.createElement("div", {
+  }, "github.com/Farouk773"))), /*#__PURE__*/React.createElement("div", {
     className: "p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-4"
   }, /*#__PURE__*/React.createElement(Icon, {
     name: "mapPin",
