@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farouk Bouraoui | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Full-stack developer portfolio of Farouk Bouraoui, showcasing web development, REST APIs, .NET, React, Spring Boot, Python, data analysis and software engineering projects." />
+  <meta name="author" content="Farouk Bouraoui" />
+  <meta name="keywords" content="Farouk Bouraoui, Full-Stack Developer, Software Engineering Student, CY Tech, React, Spring Boot, ASP.NET Core, Blazor, Python, Data Analysis, France, Freelance Developer" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Farouk Bouraoui | Full-Stack Developer Portfolio" />
+  <meta property="og:description" content="Software engineering student & full-stack developer based in France. Explore real technical projects, client data-analysis tools, and web applications." />
+  <meta property="og:image" content="/assets/university-hero.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React 18 UMD -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
+<body class="bg-[#0b0f19] text-slate-100 font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-300 min-h-screen relative overflow-x-hidden">
+  <div id="root"></div>
+
+  <!-- Pre-compiled Production Bundle -->
+  <script src="/public/bundle.js"></script>
+</body>
+</html>
